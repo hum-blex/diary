@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'feelings.dart';
-import 'colors.dart';
+import '../colorsandfeelings/feelings.dart';
+import '../colorsandfeelings/colors.dart';
 
 class dailytile extends StatelessWidget {
   String felt;

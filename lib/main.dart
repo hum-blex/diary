@@ -1,4 +1,4 @@
-import 'package:diary/homepage.dart';
+import 'package:diary/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

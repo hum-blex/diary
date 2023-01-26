@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:diary/utils/dailytile.dart';
+import 'package:diary/utils/dailytiles/dailytile.dart';
+import 'package:diary/utils/dailytiles/NewDailyTile.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatefulWidget {
@@ -11,6 +12,15 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+  //create new daily tile
+  void CreateNewTile() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return NewDailyTile();
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +62,7 @@ class _HomepageState extends State<Homepage> {
                       color: Color.fromARGB(255, 239, 237, 237),
                     ),
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: CreateNewTile,
                       icon: Icon(Icons.add),
                     ),
                   ),
